@@ -23,6 +23,7 @@
 		0A482E7B20FB50F000BB93DD /* BluetoothConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothConnector.swift; sourceTree = "<group>"; };
 		0A482E7D20FB538600BB93DD /* BluetoothConnectorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothConnectorProtocol.swift; sourceTree = "<group>"; };
 		0A482E7F20FB5C2900BB93DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A5076DE215A655D00890310 /* AirPods Connector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AirPods Connector.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		0A482E6A20FB4ACC00BB93DD /* AirPods Connector */ = {
 			isa = PBXGroup;
 			children = (
+				0A5076DE215A655D00890310 /* AirPods Connector.entitlements */,
 				0A482E6B20FB4ACC00BB93DD /* AppDelegate.swift */,
 				0A482E7120FB4ACE00BB93DD /* Main.storyboard */,
 				0A482E7420FB4ACE00BB93DD /* Info.plist */,
@@ -98,6 +100,11 @@
 				TargetAttributes = {
 					0A482E6720FB4ACC00BB93DD = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -207,7 +214,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -261,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -273,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AirPods Connector/AirPods Connector.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CSE3HFR9XU;
@@ -291,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AirPods Connector/AirPods Connector.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CSE3HFR9XU;
